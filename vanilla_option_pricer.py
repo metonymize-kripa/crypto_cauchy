@@ -22,5 +22,5 @@ def genCauchyCallOptionPrice(days_ahead, strike, spot, loc, scale, num_traces):
     average_payoff = running_sum_call_payoff/num_traces
     return round(average_payoff,2)
 
-estimated_call_option_price = genCauchyCallOptionPrice(2,3100,3000,0,0.02,1000)
+estimated_call_option_price = genCauchyCallOptionPrice(2,2000,1850,0,0.025,1000)
 print(estimated_call_option_price)
