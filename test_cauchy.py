@@ -4,7 +4,7 @@ from scipy.stats import cauchy, norm
 import numpy as np
 import pandas as pd
 
-my_data = pd.read_csv('BTC-USD-samples.csv', delimiter=',')
+my_data = pd.read_csv('ETH-USD-samples.csv', delimiter=',')
 my_data['returns']=np.log(my_data.Close) - np.log(my_data.Close.shift(1))
 my_data.returns[my_data.returns == np.inf] = 0
 my_data.returns[my_data.returns == -np.inf] = 0
